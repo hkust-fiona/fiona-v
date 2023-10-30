@@ -8,9 +8,15 @@
 🎯This sub-project is an integral part of the [FIONA-Toolchain](https://github.com/hkust-fiona/) and aims to provide a scala-based register-transfer level implementation of FIONA-V baseline ISA. It can be synthesized and physically run on [FIONA-Hardware](https://github.com/hkust-fiona/fiona-hardware) for end-to-end verification.
 
 ## Quickstarts for Developing FIONA-V
-🚩This is a submodule for [chipyard](https://github.com/ucb-bar/chipyard). Please first set up your chipyard environment according to the official document. 
+🚩This is a submodule for [chipyard](https://github.com/ucb-bar/chipyard). We based FIONA-V on chipyard version 1.10.0. Please first set up your chipyard environment according to the [official document](https://chipyard.readthedocs.io/en/1.10.0/Chipyard-Basics/Initial-Repo-Setup.html). 
 
 ```bash
+git clone https://github.com/ucb-bar/chipyard.git -b 1.10.0
+
+# Make sure to setup the environment according to
+# https://chipyard.readthedocs.io/en/1.10.0/Chipyard-Basics/Initial-Repo-Setup.html
+# BEFORE running the following commands
+
 cd chipyard/
 git submodule add https://github.com/hkust-fiona/fiona-v.git ./generators/fiona-v
 ```
